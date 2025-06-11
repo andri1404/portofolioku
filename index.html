@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Andri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 0 10px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Muhammad Andri</h1>
+    <p>Profesional | Teknologi & Pendidikan</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Tentang Saya</h2>
+      <p>Saya Muhammad Andri, lulusan Pendidikan Agama Islam (S.Pd) dari IAI Darussalam Martapura, juga memiliki keahlian Teknik Komputer dan Jaringan dari SMK Negeri 1 Sungai Tabuk. Saya pemilik <strong>Cryptoshop</strong>, yang menyediakan layanan digital seperti desain grafis, jasa ketik, manajemen sosial media, dan pembuatan bot otomatis untuk Telegram/WhatsApp.</p>
+    </div>
+
+    <div class="card">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li><strong>Institut Agama Islam Darussalam Martapura</strong> – S.Pd Pendidikan Agama Islam</li>
+        <li><strong>SMK Negeri 1 Sungai Tabuk</strong> – Teknik Komputer dan Jaringan</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pengalaman</h2>
+      <ul>
+        <li><strong>Owner – Cryptoshop (2020–sekarang)</strong><br>Mengelola layanan digital seperti desain, bot otomatis, ketik, dan admin sosial media.</li>
+        <li><strong>Magang – CV. Plus Multimedia Komputer</strong><br>Teknisi dan customer service; instalasi, perbaikan, serta layanan pelanggan.</li>
+        <li><strong>Magang – Dinas PUPR</strong><br>Pengarsipan dan manajemen dokumen administrasi.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>Desain grafis (Canva, Photoshop dasar)</li>
+        <li>Pengetikan cepat dan entry data</li>
+        <li>Manajemen media sosial</li>
+        <li>Pembuatan bot Telegram / WhatsApp</li>
+        <li>Perakitan & troubleshooting komputer dasar</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contoh Desain</h2>
+      <p><strong>Webinar MPK 2025 – Prodi Profesi Dokter FK UM Surabaya</strong><br>Desain feed Instagram bertema luar angkasa, QR code, dan poster digital menggunakan Canva & Photoshop.</p>
+    </div>
+
+    <div class="card">
+      <h2>Proyek Bot Validasi Nomor WhatsApp</h2>
+      <p>Mengembangkan bot otomatis yang dapat:</p>
+      <ul>
+        <li>Generate nomor WhatsApp secara otomatis</li>
+        <li>Melakukan validasi nomor aktif/tidak aktif</li>
+        <li>Menampilkan progres dan status validasi (aktif/nonaktif)</li>
+      </ul>
+      <p>Bot ini digunakan untuk menyusun database nomor WhatsApp yang valid untuk keperluan promosi, UMKM, dan usaha digital lainnya.</p>
+    </div>
+
+    <div class="card">
+      <h2>Proyek Bot Auto Kirim Lamaran Kerja</h2>
+      <p>Membuat bot Telegram yang memudahkan pengguna mengirimkan lamaran kerja secara otomatis melalui email. Fitur bot ini meliputi:</p>
+      <ul>
+        <li>Upload file CV dan surat lamaran (PDF)</li>
+        <li>Masukkan email tujuan, subjek, dan isi email</li>
+        <li>Bot mengirim email secara otomatis ke beberapa alamat sekaligus</li>
+        <li>Dilengkapi konfirmasi sebelum pengiriman</li>
+      </ul>
+      <p>Bot ini dirancang untuk mempercepat proses melamar kerja secara digital dan efisien bagi para pencari kerja.</p>
+    </div>
+
+    <div class="card">
+      <h2>Proyek Bot Auto Cek Kerentanan Website</h2>
+      <p>Mengembangkan bot Telegram otomatis yang mampu melakukan pemindaian keamanan dasar pada situs web. Fitur bot ini meliputi:</p>
+      <ul>
+        <li>Deteksi header keamanan seperti <strong>CSP</strong>, <strong>X-Frame-Options</strong>, dan <strong>HSTS</strong></li>
+        <li>Deteksi potensi celah keamanan seperti <strong>XSS</strong> dan <strong>SQL Injection</strong></li>
+        <li>Pengecekan port terbuka dan risiko clickjacking</li>
+        <li>Menampilkan hasil pemindaian langsung dalam bentuk pesan Telegram</li>
+      </ul>
+      <p>Bot ini berguna untuk admin IT atau pengembang web yang ingin melakukan audit keamanan ringan secara cepat dan otomatis.</p>
+    </div>
+
+    <div class="card contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:andrimuhammad330@gmail.com">andrimuhammad330@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/6283874636450">0838-7463-6450</a></p>
+      <p>Lokasi: Martapura, Kalimantan Selatan</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Muhammad Andri. Seluruh hak cipta dilindungi.
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
